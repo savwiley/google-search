@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang=en>
+    <head>
+        <script src="https://kit.fontawesome.com/25a49a4783.js" crossorigin="anonymous"></script>
+
+        <style>
+            body {
+                font-family:arial;
+                background: #fff;
+            }
+
+
+            /*--HEADER--*/
+            .header{
+                display:grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                grid-template-areas: "logo search search search sign-in" "logo nav nav nav sign-in";
+                border-bottom: 1px solid rgba(0,0,0,0.2);
+                position:absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+            }
+            /*--LOGO--*/
+            #logo{
+                grid-area: logo;
+                justify-self: center;
+                margin-top: 10%;
+            }
+            #logo img {
+                width: 100px;
+            }
+            /*--SEARCH--*/
+            #search-bar{
+                grid-area: search;
+                border-radius: 50px;
+                background: #fff;
+                border: 1px solid rgba(0,0,0,0.2);
+                padding: 10px;
+                box-shadow: 0 0 4px transparent;
+                margin-top: 10px;
+            }
+            #search-bar:hover{
+                border: 1px solid transparent;
+                box-shadow: 0 0 4px rgba(0,0,0,0.2);
+            }
+            #search-bar input{
+                width: 90%;
+                margin-left: 10px;
+                background: #fff;
+                border:none;
+            }
+            #search-bar .fas{
+                float: right;
+                color: #0000ff;
+                padding-right: 10px;
+                cursor:pointer;
+            }
+            /*--SIGN IN--*/
+            #sign-in{
+                grid-area:sign-in;
+                text-align:right;
+                justify-self:center;
+                margin-top: 20px;
+                color: rgba(0,0,0,0.6);
+            }
+            #sign-in .fas {
+                padding: 10px;
+                border-radius: 50px;
+            }
+            #sign-in .fas:hover{
+                cursor:pointer;
+                background: #ebebeb;
+            }
+            #sign-in button{
+                background: #0000FF;
+                color: #fff;
+                padding: 5px 20px;
+                font-size: 15px;
+                border:none;
+                border-radius: 3px;
+            }
+            /*--LINKS--*/
+            .nav {
+                grid-area:nav;
+                align-self:center;
+            }
+            .nav a{
+                color: rgba(0,0,0,0.5);
+                font-size: 13px;
+                text-decoration:none;
+                margin: 0 10px;
+                padding-bottom: 10px;
+            }
+            #left, #right{
+                display:inline;
+            }
+            #right{
+                float:right;
+            }
+        </style>
+
+    </head>
+    <div class="header">
+        <div id="logo">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+        </div>
+        
+        <div id="search-bar">
+            <input type="text"><i class="fas fa-search"></i>
+        </div>
+
+        <div id="sign-in">
+            <i class="fas fa-th"></i>
+            <button type="button">Sign in</button>
+        </div>
+
+        <div class="nav">
+        <div id="left">
+            <a href="URL"><i class="fas fa-search"></i> All</a>
+            <a href="URL"><i class="fas fa-tag"></i> Shopping</a>
+            <a href="URL"><i class="fas fa-newspaper"></i> News</a>
+            <a href="URL"><i class="fab fa-youtube"></i> Videos</a>
+            <a href="URL"><i class="fas fa-image"></i> Images</a>
+            <a href="URL"><i class="fas fa-ellipsis-v"></i> More</a>
+        </div>
+        <div id="right">
+            <a href="URL">Settings</a>
+            <a href="URL">Tools</a>
+        </div>
+        </div>
+
+    </div>
+    <header>
+
+    </header>
+
+    <body>
+        <main>
+
+        </main>
+    </body>
+
+    <footer>
+
+    </footer>
+
+</html>
